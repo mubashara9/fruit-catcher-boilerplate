@@ -24,6 +24,8 @@ class Game{
                     player.getCount();
                 }
                //create form object and call the display function
+                form = new Form()
+                form.display()
             }
     player1 = createSprite(200,500);
     player1.addImage("player1",player_img);
@@ -66,7 +68,7 @@ class Game{
                          textSize(25);
                          fill("white");
                          //display the score of both the players at  a given position
-                 
+                 text("Score:"+score,50,50)
                  }
                 
                 
